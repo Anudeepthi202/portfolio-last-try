@@ -196,5 +196,26 @@ letter-spacing: 2px;
     padding: 60px 10%;
     background: #f9f9f9;
     text-align: center;
+#skills {
+    display: none; /* Hide initially */
+    padding: 60px 10%;
+    background: #eaf2ff;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skill-card {
+    background: linear-gradient(120deg, #1c99fe, #7644ff);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 
