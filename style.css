@@ -191,4 +191,10 @@ letter-spacing: 2px;
 .project-links .btn:last-child {
     background: #007bff;
 }
+#projects {
+    display: none; /* Hide initially */
+    padding: 60px 10%;
+    background: #f9f9f9;
+    text-align: center;
+
 
