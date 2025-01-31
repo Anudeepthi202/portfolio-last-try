@@ -10,7 +10,7 @@
       <nav>
         <img src="./img/logo.png" class="logo" />
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#" onclick="showHome()">Home</a></li>
           <li><a href="#" onclick="showAbout()">About</a></li>
          <li><a href="#" onclick="showSkills()">Skills</a></li>
         <li><a href="#" onclick="showProjects()">Projects</a></li>
@@ -103,6 +103,10 @@
 </section>
 
 <script>
+    function showHome() {
+        window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top smoothly
+    }
+
     function showAbout() {
         document.getElementById("about").style.display = "block"; // Show About section
         document.getElementById("about").scrollIntoView({ behavior: "smooth" }); // Smooth scrolling
