@@ -11,7 +11,7 @@
         <img src="./img/logo.png" class="logo" />
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#" onclick="showAbout()">About</a></li>
          <li><a href="#" onclick="showSkills()">Skills</a></li>
         <li><a href="#" onclick="showProjects()">Projects</a></li>
         <li><a href="#" onclick="showContact()">Contact</a></li>
@@ -20,7 +20,7 @@
       </nav>
 
 <div class="content">
-        <span class="title">Freelance Web Developer</span>
+        <span class="title"> Web Developer</span>
         <h1>Hello, I’m <span>Anudeepthi</span></h1>
         <p>
           I’m full-stack developer.
@@ -30,6 +30,21 @@
         <a href="https://drive.google.com/file/d/1iieFP5ipDoCuKep8jxBcgmfzd0x5Upxw/view?usp=drivesdk" class="btn">Download CV</a>
       </div>
     </div>
+    <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+        <img src="img/profile.jpg" alt="Anudeepthi" class="about-img">
+        <div class="about-content">
+            <p>
+                Hi, I’m <strong>Anudeepthi</strong>, a passionate full-stack developer with expertise in Java, C++, Python for backend development and HTML, CSS, JavaScript for frontend development.
+            </p>
+            <p>
+                I love solving problems and building efficient software solutions. My goal is to work as a software Engineer and contribute to impactful projects.
+            </p>
+        </div>
+    </div>
+</section>
+
     <section id="skills">
     <h2 class="section-title">My Skills</h2>
     <div class="skills-container">
@@ -88,6 +103,11 @@
 </section>
 
 <script>
+    function showAbout() {
+        document.getElementById("about").style.display = "block"; // Show About section
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" }); // Smooth scrolling
+    }
+
     function showSkills() {
         document.getElementById("skills").style.display = "block"; // Show Skills section
         document.getElementById("skills").scrollIntoView({ behavior: "smooth" }); // Smooth scroll
